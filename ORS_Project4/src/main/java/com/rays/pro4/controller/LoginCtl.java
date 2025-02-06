@@ -91,7 +91,7 @@ public class LoginCtl extends BaseCtl {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("Lctl Do post");
+		System.out.println("Lctl Do get");
 		HttpSession session = request.getSession(false);
 		String op = DataUtility.getString(request.getParameter("operation"));
 
@@ -105,7 +105,6 @@ public class LoginCtl extends BaseCtl {
 		}
 		System.out.println("Don get 22");
 		ServletUtility.forward(getView(), request, response);
-
 	}
 
 	/**
@@ -152,7 +151,6 @@ public class LoginCtl extends BaseCtl {
 						ServletUtility.redirect(str, request, response);
 						return;
 					}
-
 				} else if (bean == null) {
 					System.out.println(" Lctl Dp pghjkiuygost 33");
 					bean = (UserBean) populateBean(request);

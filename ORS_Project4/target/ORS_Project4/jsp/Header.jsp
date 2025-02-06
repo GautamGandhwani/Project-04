@@ -8,7 +8,6 @@
 	pageEncoding="ISO-8859-1"%>
 <html>
 
-
 <body>
 	<%
 		UserBean userBean = (UserBean) session.getAttribute("user");
@@ -65,27 +64,27 @@
 						MeritList</b>
 				</a> | <%
 					if (userBean.getRoleId() == RoleBean.ADMIN) {
-				%> <a href="<%=ORSView.MARKSHEET_CTL%>">Add Marksheet</b></a> | <a
-					href="<%=ORSView.MARKSHEET_LIST_CTL%>">Marksheet List</b></a> | <a
-					href="<%=ORSView.USER_CTL%>">Add User</b></a> | <a
-					href="<%=ORSView.USER_LIST_CTL%>">User List</b></a> | <a
-					href="<%=ORSView.COLLEGE_CTL%>">Add College</b></a> | <a
-					href="<%=ORSView.COLLEGE_LIST_CTL%>">College List</b></a> | <a
-					href="<%=ORSView.ROLE_CTL%>">Add Role</b></a> | <a
-					href="<%=ORSView.ROLE_LIST_CTL%>">Role List</b></a> | <a
-					href="<%=ORSView.STUDENT_CTL%>">Add Student</b></a> | <a
-					href="<%=ORSView.STUDENT_LIST_CTL%>">Student List</b></a> | <a
-					href="<%=ORSView.COURSE_CTL%>">Add Course</b></a> | <a
-					href="<%=ORSView.COURSE_LIST_CTL%>">Course List</b></a> | <a
-					href="<%=ORSView.SUBJECT_CTL%>">Add Subject</b></a> | <a
-					href="<%=ORSView.SUBJECT_LIST_CTL%>">Subject List</b></a> | <a
-					href="<%=ORSView.FACULTY_CTL%>">Add Faculty</b></a> | <a
-					href="<%=ORSView.FACULTY_LIST_CTL%>">Faculty List</b></a> | <a
-					href="<%=ORSView.TIMETABLE_CTL%>">Add TimeTable</b></a> | <a
-					href="<%=ORSView.TIMETABLE_LIST_CTL%>">TimeTable List</b></a> | <a
-					href="<%=ORSView.PRODUCT_CTL%>">Add Product</b></a> | <a
-					href="<%=ORSView.PRODUCT_LIST_CTL%>">Product List</b></a> | <a
-					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</b></a> <%
+				%> <a href="<%=ORSView.MARKSHEET_CTL%>">Add Marksheet</a> | <a
+					href="<%=ORSView.MARKSHEET_LIST_CTL%>">Marksheet List</a> | <a
+					href="<%=ORSView.USER_CTL%>">Add User</a> | <a
+					href="<%=ORSView.USER_LIST_CTL%>">User List</a> | <a
+					href="<%=ORSView.COLLEGE_CTL%>">Add College</a> | <a
+					href="<%=ORSView.COLLEGE_LIST_CTL%>">College List</a> | <a
+					href="<%=ORSView.ROLE_CTL%>">Add Role</a> | <a
+					href="<%=ORSView.ROLE_LIST_CTL%>">Role List</a> | <a
+					href="<%=ORSView.STUDENT_CTL%>">Add Student</a> | <a
+					href="<%=ORSView.STUDENT_LIST_CTL%>">Student List</a> | <a
+					href="<%=ORSView.COURSE_CTL%>">Add Course</a> | <a
+					href="<%=ORSView.COURSE_LIST_CTL%>">Course List</a> | <a
+					href="<%=ORSView.SUBJECT_CTL%>">Add Subject</a> | <a
+					href="<%=ORSView.SUBJECT_LIST_CTL%>">Subject List</a> | <a
+					href="<%=ORSView.FACULTY_CTL%>">Add Faculty</a> | <a
+					href="<%=ORSView.FACULTY_LIST_CTL%>">Faculty List</a> | <a
+					href="<%=ORSView.TIMETABLE_CTL%>">Add TimeTable</a> | <a
+					href="<%=ORSView.TIMETABLE_LIST_CTL%>">TimeTable List</a> | <a
+					href="<%=ORSView.PRODUCT_CTL%>">Add Product</a> | <a
+					href="<%=ORSView.PRODUCT_LIST_CTL%>">Product List</a> | <a
+					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</a> <%
  	}
  %> <%
  	if (userBean.getRoleId() == RoleBean.STUDENT) {

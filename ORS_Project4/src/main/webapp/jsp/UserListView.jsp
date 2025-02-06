@@ -59,6 +59,8 @@
 
 				List ulist = (List) request.getAttribute("LoginId");
 
+				ulist = (List) request.getAttribute("dOB");
+
 				int next = DataUtility.getInt(request.getAttribute("nextlist").toString());
 			%>
 
@@ -87,7 +89,8 @@
 						value="<%=ServletUtility.getParameter("login", request)%>">
 						&emsp; <label>Role</font> :
 					</label> <%=HTMLUtility.getList("roleid", String.valueOf(bean.getRoleId()), rlist)%>
-						&nbsp; <%-- <%=HTMLUtility.getList("loginid", String.valueOf(bean.getId()), ulist)%> --%>
+						<%-- &nbsp; <%=HTMLUtility.getList("login", String.valueOf(bean.getId()), ulist)%> --%>
+						<%-- &nbsp; <%=HTMLUtility.getList("dOB", String.valueOf(bean.getId()), ulist)%> --%>
 						&nbsp; <%-- <label>MobileNo</font> :</label>
  					 <input
 						type="number" name="mobile" placeholder="Enter mobile no"

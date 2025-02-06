@@ -166,7 +166,6 @@ public class UserRegistrationCtl extends BaseCtl {
 			throws ServletException, IOException {
 		log.debug("UserRegistrationCtl Method doGet Started");
 		ServletUtility.forward(getView(), request, response);
-
 	}
 
 	/**
@@ -219,7 +218,5 @@ public class UserRegistrationCtl extends BaseCtl {
 	@Override
 	protected String getView() {
 		return ORSView.USER_REGISTRATION_VIEW;
-
 	}
-
 }

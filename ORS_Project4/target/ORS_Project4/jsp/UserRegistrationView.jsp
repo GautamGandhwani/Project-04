@@ -25,7 +25,7 @@
 		$("#udate").datepicker({
 			changeMonth : true,
 			changeYear : true,
-			yearRange : '1980:2002',
+			yearRange : '1985:2005',
 		//  mindefaultDate : "01-01-1962"
 		});
 	});
@@ -185,10 +185,9 @@
 					<td></td>
 				</tr>
 
-
 				<tr>
 					<th></th>
-					<td colspan="2"> &nbsp; &emsp; <input type="submit"
+					<td colspan="2">&nbsp; &emsp; <input type="submit"
 						name="operation" value="<%=UserRegistrationCtl.OP_SIGN_UP%>">
 						&nbsp; <input type="submit" name="operation"
 						value="<%=UserRegistrationCtl.OP_RESET%>">
@@ -197,9 +196,6 @@
 			</table>
 		</div>
 	</form>
-
 	<%@ include file="Footer.jsp"%>
-
-	</form>
 </body>
 </html>

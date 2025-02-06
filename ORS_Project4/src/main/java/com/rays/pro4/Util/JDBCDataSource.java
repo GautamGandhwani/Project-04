@@ -51,7 +51,6 @@ public final class JDBCDataSource {
 			datasource.cpds.setMaxPoolSize(new Integer((String) rb.getString("maxPoolSize")));
 			datasource.cpds.setMaxIdleTime(DataUtility.getInt(rb.getString("timeout")));
 			datasource.cpds.setMinPoolSize(new Integer((String) rb.getString("minPoolSize")));
-
 		}
 		return datasource;
 	}

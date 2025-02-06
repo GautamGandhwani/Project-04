@@ -1,3 +1,4 @@
+<%@page import="com.rays.pro4.controller.UserListCtl"%>
 <%@page import="com.rays.pro4.Model.RoleModel"%>
 <%@page import="com.rays.pro4.Model.UserModel"%>
 <%@page import="com.rays.pro4.Util.HTMLUtility"%>
@@ -5,7 +6,6 @@
 <%@page import="java.util.List"%>
 <%@page import="com.rays.pro4.Util.DataUtility"%>
 <%@page import="com.rays.pro4.Util.ServletUtility"%>
-<%@page import="com.rays.pro4.controller.UserListCtl"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <html>
@@ -29,12 +29,11 @@
 		$("#udate").datepicker({
 			changeMonth : true,
 			changeYear : true,
-			yearRange : '1980:2002',
+			yearRange : '1985:2005',
 		//  mindefaultDate : "01-01-1962"
 		});
 	});
 </script>
-
 </head>
 <body>
 	<jsp:useBean id="bean" class="com.rays.pro4.Bean.UserBean"
@@ -44,7 +43,7 @@
 
 	<form action="<%=ORSView.USER_LIST_CTL%>" method="post">
 
-		<center>
+		<div align="center">
 
 			<div align="center">
 				<h1>User List</h1>
@@ -88,13 +87,13 @@
 						value="<%=ServletUtility.getParameter("login", request)%>">
 						&emsp; <label>Role</font> :
 					</label> <%=HTMLUtility.getList("roleid", String.valueOf(bean.getRoleId()), rlist)%>
-						&nbsp; <%-- <%=HTMLUtility.getList("loginid", String.valueOf(bean.getRoleId()), ulist)%>
- --%> &nbsp; <%-- <label>MobileNo</font> :</label>
+						&nbsp; <%-- <%=HTMLUtility.getList("loginid", String.valueOf(bean.getId()), ulist)%> --%>
+						&nbsp; <%-- <label>MobileNo</font> :</label>
  					 <input
 						type="number" name="mobile" placeholder="Enter mobile no"
 						value="<%=ServletUtility.getParameter("mobile", request)%>"> --%>
 
-						<label>dob</font> :
+						<label>Dob</font> :
 					</label><input type="text" name="dob" id="udate" readonly="readonly"
 						size="25" placeholder="Enter Dob "
 						value="<%=ServletUtility.getParameter("dob", request)%>">
@@ -131,7 +130,6 @@
 							RoleBean rolebean = new RoleBean();
 							rolebean = model.findByPK(bean.getRoleId());
 				%>
-
 
 				<tr align="center">
 					<td><input type="checkbox" class="checkbox" name="ids"
@@ -174,14 +172,13 @@
 
 					<td><input type="submit" name="operation"
 						value="<%=UserListCtl.OP_DELETE%>"></td>
+
 					<td><input type="submit" name="operation"
 						value="<%=UserListCtl.OP_NEW%>"></td>
+
 					<td align="right"><input type="submit" name="operation"
 						value="<%=UserListCtl.OP_NEXT%>"
 						<%=(list.size() < pageSize || next == 0) ? "disabled" : ""%>></td>
-
-
-
 				</tr>
 			</table>
 			<%
@@ -196,17 +193,15 @@
 
 			<input type="hidden" name="pageNo" value="<%=pageNo%>"> <input
 				type="hidden" name="pageSize" value="<%=pageSize%>">
+		</div>
 	</form>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-
-	</center>
-
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	<%@include file="Footer.jsp"%>
 </body>
 </html>
