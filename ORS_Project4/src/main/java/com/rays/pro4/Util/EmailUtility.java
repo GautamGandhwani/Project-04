@@ -159,7 +159,6 @@ public class EmailUtility {
 			case EmailMessage.TEXT_MSG:
 				msg.setContent(emailMessageDTO.getMessage(), "text/plain");
 				break;
-
 			}
 
 			// Send the mail
@@ -170,5 +169,4 @@ public class EmailUtility {
 			throw new ApplicationException("Email " + ex.getMessage());
 		}
 	}
-
 }
