@@ -183,7 +183,6 @@ public class UserListCtl extends BaseCtl {
 						ServletUtility.handleException(e, request, response);
 						return;
 					}
-
 					ServletUtility.setSuccessMessage("User is Deleted Successfully", request);
 				}
 			} else {

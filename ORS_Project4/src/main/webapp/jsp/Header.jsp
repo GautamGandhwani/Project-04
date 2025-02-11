@@ -84,6 +84,8 @@
 					href="<%=ORSView.TIMETABLE_LIST_CTL%>">TimeTable List</a> | <a
 					href="<%=ORSView.PRODUCT_CTL%>">Add Product</a> | <a
 					href="<%=ORSView.PRODUCT_LIST_CTL%>">Product List</a> | <a
+					href="<%=ORSView.DOCTOR_CTL%>">Add Doctor</a> | <a
+					href="<%=ORSView.DOCTOR_LIST_CTL%>">Doctor List</a> | <a
 					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</a> <%
  	}
  %> <%
