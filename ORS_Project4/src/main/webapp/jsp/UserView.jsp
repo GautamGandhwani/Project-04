@@ -34,7 +34,7 @@
 		scope="request"></jsp:useBean>
 	<%@ include file="Header.jsp"%>
 
-	<center>
+	<div align="center">
 
 		<form action="<%=ORSView.USER_CTL%>" method="post">
 
@@ -240,7 +240,7 @@
 				</tr>
 			</table>
 		</form>
-	</center>
+	</div>
 
 	<%@ include file="Footer.jsp"%>
 </body>

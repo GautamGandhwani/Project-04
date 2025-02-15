@@ -63,5 +63,4 @@ public abstract class BaseBean implements Serializable, DropdownListBean, Compar
 	public int compareTo(BaseBean next) {
 		return getValue().compareTo(next.getValue());
 	}
-
 }

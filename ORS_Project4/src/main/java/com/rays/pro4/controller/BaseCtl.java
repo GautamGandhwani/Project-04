@@ -162,5 +162,4 @@ public abstract class BaseCtl extends HttpServlet {
 	 * @return
 	 */
 	protected abstract String getView();
-
 }

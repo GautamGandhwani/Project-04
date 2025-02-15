@@ -132,7 +132,7 @@
 							RoleModel model = new RoleModel();
 							RoleBean rolebean = new RoleBean();
 							rolebean = model.findByPK(bean.getRoleId());
-				%>
+				%>	
 
 				<tr align="center">
 					<td><input type="checkbox" class="checkbox" name="ids"
