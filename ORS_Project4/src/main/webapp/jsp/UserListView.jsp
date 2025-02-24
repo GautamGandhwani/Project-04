@@ -1,3 +1,4 @@
+<%@page import="java.util.HashMap"%>
 <%@page import="com.rays.pro4.controller.UserListCtl"%>
 <%@page import="com.rays.pro4.Model.RoleModel"%>
 <%@page import="com.rays.pro4.Model.UserModel"%>
@@ -94,9 +95,17 @@
 						&nbsp; <%-- <label>MobileNo</font> :</label>
  					 <input
 						type="number" name="mobile" placeholder="Enter mobile no"
-						value="<%=ServletUtility.getParameter("mobile", request)%>"> --%>
+						value="<%=ServletUtility.getParameter("mobile", request)%>"> --%> 
+						<%-- <lable>
+						<%
+							HashMap map = new HashMap();
+							map.put("Male", "Male");
+							map.put("Female", "Female");
 
-						<label>Dob</font> :
+							String hlist = HTMLUtility.getList("gender", String.valueOf(bean.getGender()), map);
+						%> <%=hlist%>
+					</lable> --%>
+					 <label>Dob</font> :
 					</label><input type="text" name="dob" id="udate" readonly="readonly"
 						size="25" placeholder="Enter Dob "
 						value="<%=ServletUtility.getParameter("dob", request)%>">
@@ -132,7 +141,7 @@
 							RoleModel model = new RoleModel();
 							RoleBean rolebean = new RoleBean();
 							rolebean = model.findByPK(bean.getRoleId());
-				%>	
+				%>
 
 				<tr align="center">
 					<td><input type="checkbox" class="checkbox" name="ids"
@@ -194,8 +203,8 @@
 				}
 			%>
 
-			<input type="hidden" name="pageNo" value="<%=pageNo%>"> <input
-				type="hidden" name="pageSize" value="<%=pageSize%>">
+			<input type="hidden" name="pageNo" value="<%=pageNo%>"> 
+			<input type="hidden" name="pageSize" value="<%=pageSize%>">
 		</div>
 	</form>
 	<br>

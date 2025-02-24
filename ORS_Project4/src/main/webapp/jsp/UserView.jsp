@@ -213,6 +213,7 @@
 						value="<%=DataUtility.getStringData(bean.getMobileNo())%>"></td>
 					<td style="position: fixed"><font color="red"> <%=ServletUtility.getErrorMessage("mobileNo", request)%></font></td>
 				</tr>
+				
 				<tr>
 					<th style="padding: 3px"></th>
 				</tr>
@@ -226,7 +227,6 @@
 						name="operation" value="<%=UserCtl.OP_UPDATE%>"> &nbsp;
 						&nbsp; <input type="submit" name="operation"
 						value="<%=UserCtl.OP_CANCEL%>"></td>
-
 					<%
 						} else {
 					%>
@@ -241,7 +241,6 @@
 			</table>
 		</form>
 	</div>
-
 	<%@ include file="Footer.jsp"%>
 </body>
 </html>

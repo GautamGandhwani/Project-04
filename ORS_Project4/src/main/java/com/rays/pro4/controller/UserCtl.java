@@ -122,7 +122,6 @@ public class UserCtl extends BaseCtl {
 				request.setAttribute("confirmPassword", "New password and Confirm password must be same!!");
 				pass = false;
 			}
-
 		}
 
 		if (DataValidator.isNull(request.getParameter("gender"))) {
@@ -142,11 +141,9 @@ public class UserCtl extends BaseCtl {
 			request.setAttribute("dob", PropertyReader.getValue("error.date", "Date Of Birth"));
 			pass = false;
 		}
-
 		log.debug("UserCtl Method validate Ended");
 
 		return pass;
-
 	}
 
 	/*
@@ -188,7 +185,6 @@ public class UserCtl extends BaseCtl {
 		log.debug("UserCtl Method populatebean Ended");
 
 		return bean;
-
 	}
 
 	/*
@@ -220,7 +216,6 @@ public class UserCtl extends BaseCtl {
 				return;
 			}
 		}
-
 		ServletUtility.forward(getView(), request, response);
 		log.debug("UserCtl Method doGet Ended");
 	}
@@ -316,5 +311,4 @@ public class UserCtl extends BaseCtl {
 	protected String getView() {
 		return ORSView.USER_VIEW;
 	}
-
 }

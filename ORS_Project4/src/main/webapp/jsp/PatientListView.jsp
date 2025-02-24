@@ -95,7 +95,7 @@
 					<th>Name</th>
 					<th>Mobile</th>
 					<th>DOB</th>
-					<th>Expertise</th>
+					<th>Dcease</th>
 					<th>Edit</th>
 				</tr>
 

@@ -330,5 +330,4 @@ public class ServletUtility {
 	public static int getPageSize(HttpServletRequest request) {
 		return (Integer) request.getAttribute("pageSize");
 	}
-
 }
