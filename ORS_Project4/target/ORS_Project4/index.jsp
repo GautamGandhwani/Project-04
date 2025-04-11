@@ -1,4 +1,3 @@
-
 <%@page import="com.rays.pro4.Bean.UserBean"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -29,7 +28,7 @@
 
 	<h1 align="center">
 		<font size="10px" color="red"> <a
-			href="<%=ORSView.WELCOME_CTL%>" > Online Result System</a></font>
+			href="<%=ORSView.WELCOME_CTL%>"> Online Result System</a></font>
 	</h1>
 </body>
 </html>

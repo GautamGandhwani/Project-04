@@ -9,8 +9,8 @@
 
 </head>
 <body>
-<%-- 
-	<form action="<%=ORSView.ERROR_CTL%>" method="get"> --%>
+
+	<form action="<%=ORSView.ERROR_CTL%>" method="get">
  	
  	<div align="center">
  		<img src="<%=ORSView.APP_CONTEXT%>/img/error_404.jpg" width="550" height="250">

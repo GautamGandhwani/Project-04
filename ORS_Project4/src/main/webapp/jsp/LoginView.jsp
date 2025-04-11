@@ -20,7 +20,7 @@
 		<%
 			String URI = (String) request.getAttribute("uri");
 		%>
-		
+
 		<input type="hidden" name="URI" value="<%=URI%>">
 
 		<center>
@@ -74,7 +74,5 @@
 	</form>
 	</center>
 	<%@ include file="Footer.jsp"%>
-
-
 </body>
 </html>

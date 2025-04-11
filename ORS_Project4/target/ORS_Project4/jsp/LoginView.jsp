@@ -74,7 +74,5 @@
 	</form>
 	</center>
 	<%@ include file="Footer.jsp"%>
-
-
 </body>
 </html>

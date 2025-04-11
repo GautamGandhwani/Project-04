@@ -1,3 +1,4 @@
+<%@page import="java.util.HashMap"%>
 <%@page import="com.rays.pro4.controller.UserListCtl"%>
 <%@page import="com.rays.pro4.Model.RoleModel"%>
 <%@page import="com.rays.pro4.Model.UserModel"%>
@@ -59,6 +60,8 @@
 
 				List ulist = (List) request.getAttribute("LoginId");
 
+				ulist = (List) request.getAttribute("dOB");
+
 				int next = DataUtility.getInt(request.getAttribute("nextlist").toString());
 			%>
 
@@ -87,13 +90,22 @@
 						value="<%=ServletUtility.getParameter("login", request)%>">
 						&emsp; <label>Role</font> :
 					</label> <%=HTMLUtility.getList("roleid", String.valueOf(bean.getRoleId()), rlist)%>
-						&nbsp; <%-- <%=HTMLUtility.getList("loginid", String.valueOf(bean.getId()), ulist)%> --%>
+						<%-- &nbsp; <%=HTMLUtility.getList("login", String.valueOf(bean.getId()), ulist)%> --%>
+						<%-- &nbsp; <%=HTMLUtility.getList("dOB", String.valueOf(bean.getId()), ulist)%> --%>
 						&nbsp; <%-- <label>MobileNo</font> :</label>
  					 <input
 						type="number" name="mobile" placeholder="Enter mobile no"
-						value="<%=ServletUtility.getParameter("mobile", request)%>"> --%>
+						value="<%=ServletUtility.getParameter("mobile", request)%>"> --%> 
+						<%-- <lable>
+						<%
+							HashMap map = new HashMap();
+							map.put("Male", "Male");
+							map.put("Female", "Female");
 
-						<label>Dob</font> :
+							String hlist = HTMLUtility.getList("gender", String.valueOf(bean.getGender()), map);
+						%> <%=hlist%>
+					</lable> --%>
+					 <label>Dob</font> :
 					</label><input type="text" name="dob" id="udate" readonly="readonly"
 						size="25" placeholder="Enter Dob "
 						value="<%=ServletUtility.getParameter("dob", request)%>">
@@ -191,8 +203,8 @@
 				}
 			%>
 
-			<input type="hidden" name="pageNo" value="<%=pageNo%>"> <input
-				type="hidden" name="pageSize" value="<%=pageSize%>">
+			<input type="hidden" name="pageNo" value="<%=pageNo%>"> 
+			<input type="hidden" name="pageSize" value="<%=pageSize%>">
 		</div>
 	</form>
 	<br>

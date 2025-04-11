@@ -8,6 +8,8 @@ C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\TestModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\TimeTableBean.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\TimeTableListCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\TimeTableTest.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\PatientBean.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\CustomerCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Exception\DatabaseException.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Util\JDBCDataSource.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\UserTest.java
@@ -26,9 +28,13 @@ C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\FacultyModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\GetMarksheetCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\RoleListCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\AppRole.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\DoctorCtl.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\DoctorListCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\SubjectModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\FacultyBean.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\PatientModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\Coursetest.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\DoctorModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\SubjectTest.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\CourseCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\UserModel.java
@@ -42,16 +48,19 @@ C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\ProductModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\RoleModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\FrontControler.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\CollegeBean.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\PatientListCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\FacultyListCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\CourseBean.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\FacultyCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\MarksheetCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\SubjectListCtl.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\PatientCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\StudentBean.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\WelcomeCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\CountTest.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Exception\DuplicateRecordException.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\CourseListCtl.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\CustomerListCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Util\PropertyReader.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Util\DataUtility.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Util\ServletUtility.java
@@ -60,6 +69,7 @@ C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\ProductListCtl.ja
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\DropdownListBean.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\ProductCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\UserCtl.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\CustomerModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\CollegeModelTest.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\FacultyTest.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\UserBean.java
@@ -68,6 +78,7 @@ C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\UserListCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Exception\ApplicationException.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\UserRegistrationCtl.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\CourseModel.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\DoctorBean.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\CollegeModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\MarksheetModel.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Model\TimeTableModel.java
@@ -77,6 +88,7 @@ C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\TestBean.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\MarksheetTest.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\ChainWithinClass.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\RoleTest.java
+C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\CustomerBean.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\Bean\RoleBean.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\proj4\Test\Test.java
 C:\Workspa\ORS_Project4\src\main\java\com\rays\pro4\controller\LoginCtl.java

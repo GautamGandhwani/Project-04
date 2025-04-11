@@ -11,7 +11,7 @@
 <head>
 <link rel="icon" type="image/png"
 	href="<%=ORSView.APP_CONTEXT%>/img/logo.png" sizes="16*16" />
-<title>User Page</title>
+<title>Product Page</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,7 +40,6 @@
 
 			<div align="center">
 				<h1>
-
 					<%
 						if (bean != null && bean.getId() > 0) {
 					%>
